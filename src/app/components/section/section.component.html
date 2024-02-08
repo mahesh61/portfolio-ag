@@ -1,0 +1,26 @@
+<section id="profile">
+    <div class="section__pic-container">
+      <img src="assets/img/profile-linkd-pic.png" alt="John Doe profile picture" />
+    </div>
+    <div class="section__text">
+      <p class="section__text__p1">Hello, I'm</p>
+      <h1 class="title">Mahesh Nimmala</h1>
+      <p class="section__text__p2">Full Stack Developer</p>
+      <div class="btn-container">
+        <button class="btn btn-color-2" (click)="openCv()">
+          Download CV
+        </button>
+        <button class="btn btn-color-1" onclick="location.href='./#contact'">
+          Contact Info
+        </button>
+      </div>
+      <div id="socials-container">
+       <a href="https://www.linkedin.com/in/mahesh-nimmala-0476221a4" target="_blank">
+        <img src="assets/img/linkedin.png" alt="My LinkedIn profile" class="icon"
+        (click)="onIconCleck('linkd')" />
+       </a>
+        <img src="assets/img/github.png" alt="My Github profile" class="icon"
+         (click)="onIconCleck('github')" />
+      </div>
+    </div>
+  </section>
