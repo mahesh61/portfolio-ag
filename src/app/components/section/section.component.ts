@@ -15,6 +15,6 @@ export class SectionComponent implements OnInit {
     //else if(icon==='github'){location.href='https://www.linkedin.com/in/mahesh-nimmala-0476221a4'}
   }
   openCv(){
-    window.open('assets/img/resume-example.pdf')
+    window.open('assets/img/Mahesh-Nimmala-SDE.pdf');
   }
 }

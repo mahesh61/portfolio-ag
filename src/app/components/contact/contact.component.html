@@ -1,0 +1,41 @@
+<div class="c" id="contact">
+    <div class="c-bg">
+        <div class="c-wrapper">
+            <div class="c-left">
+                <div class="c-bg-in"></div>
+                <div class="c-title">Please Contact me</div>
+                <div class="c-info">
+                    <div class="c-info-itrm">
+                        <img src="assets/img/phone.png" alt="" class="c-img" />
+                        +91 9573025605
+                    </div>
+                    <div class="c-info-itrm">
+                        <img src="assets/img/email.png" alt="" class="c-img" />
+                        nimmalamahesh361@gmail.com
+                    </div>
+                    <div class="c-info-itrm">
+                        <img src="assets/img/address.png" alt="" class="c-img" />
+                        Madhapur, Hyderabad,500081,Telangana
+                    </div>
+                </div>
+            </div>
+            <div class="c-right">
+                <p class="c-desc">
+                    Fill the form and submit to send a meassage to me.
+                </p>
+                <form  id="contact-form" #contactForm="ngForm" (ngSubmit)="sendEmail(contactForm)">
+                    <input type="text" placeholder="Name" name="user_name" [required]="true" [(ngModel)]="formObj.name" />
+                    <input type="text" placeholder="Subject" name="user_subject" [required]="true" [(ngModel)]="formObj.subject" />
+                    <input type="email" placeholder="Email" name="user_email" [required]="true" [(ngModel)]="formObj.email" />
+                    <textarea rows="5" placeholder="Message" name="message" [required]="true" [(ngModel)]="formObj.message"></textarea>
+
+
+                    <div>
+                        <button type="submit">Submit</button>
+                        <span [ngStyle]="{color:msgColor}" *ngIf="isvalidOrSent">{{msg}}</span>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>

@@ -11,6 +11,6 @@ export class SkillsComponent implements OnInit {
   ngOnInit(): void {
   }
   onArrowClick(){
-    location.href='./#projects'
+    location.href='./#contact'
   }
 }
